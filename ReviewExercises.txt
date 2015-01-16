@@ -1,0 +1,36 @@
+#########################################################################
+# Use this file to answer Review Exercises from the Big Java textbook
+#########################################################################
+
+
+R13.1 Terms
+
+a. The term “recursion” refers to the fact that the same computation recurs, or occurs repeatedly, as the problem is solved.
+b. Iteration is a loop continuing to work in the same way until a certain condition occurs.
+c. A method calling itself over and over with no end in sight.
+d. Sometimes it is easier to find a recursive solution if you change the original problem slightly.
+Then the original problem can be solved by calling this method named changed recursive helper method.
+
+R13.2 Outline, but do not implement, a recursive solution for finding the smallest value in an array.
+Write a method to return the smallest one between the first element and the return value of the the current method
+applied to the array from the second element to the last one. If the array input in the method has a length less than
+two, return its value and end.
+
+R13.3 Outline, but do not implement, a recursive solution for sorting an array of numbers.
+      Hint: First find the smallest value in the array.
+write a method to get the minimum element of the array and exchange it with the first element,
+then apply this method to the array from second to last elements,
+and then apply this to the array from third to last elements
+until there is only one element in the array.
+
+R13.6 Write a recursive definition of x^n, where n ≥ 0,
+similar to the recursive definition of the Fibonacci numbers.
+Hint: How do you compute x^n from x^n – 1?
+How does the recursion terminate?
+f(n)=f(n-1) * x;
+when n = 0, terminate it and return 1;
+
+R13.8 Write a recursive definition of n! = 1 × 2 × . . . × n,
+similar to the recursive definition of the Fibonacci numbers.
+f(n) = f(n-1) * n when n = 1, terminate it and return 1;
+
